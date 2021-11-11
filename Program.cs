@@ -1,2 +1,7 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using passwordHasher;
+
+var pwdHasher = new PasswordHasher();
+
+var output = pwdHasher.HashPassword("@joHnDow");
+
+Console.WriteLine(output);
